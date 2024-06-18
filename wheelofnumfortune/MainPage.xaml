@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wheelofnumfortune.MainPage"
+             Title="Application">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label x:Name="lblFortune" TextType="Html"/>
+            <Button Text="Refresh" Clicked="OnRefresh_Click" />
+            <Entry x:Name="txtSolution"  />
+            <Button x:Name="btnCheck" Text="Check Solution" Clicked="CheckSolution_Click" />
+            <Button x:Name="btnDiscover" Text="Discover letter" Clicked="DiscoverLetter_Click" />
+            <Label x:Name="lblStatus" TextType="Html"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
