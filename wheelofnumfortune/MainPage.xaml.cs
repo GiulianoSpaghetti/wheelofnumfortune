@@ -21,9 +21,6 @@ public partial class MainPage : ContentPage
 
     private async void tick()
     {
-        txtSolution.IsEnabled = true;
-        btnDiscover.IsEnabled = true;
-        btnCheck.IsEnabled = true;
         lblStatus.Text = "";
         try
         {
@@ -31,7 +28,10 @@ public partial class MainPage : ContentPage
         }
         catch (Exception ex)
         {
-            lblFortune.Text = ex.Message;
+            lblStatus.Text = ex.Message;
+            txtSolution.IsEnabled = false;
+            btnDiscover.IsEnabled = false;
+            btnCheck.IsEnabled = false;
             return;
         }
 
@@ -108,10 +108,16 @@ public partial class MainPage : ContentPage
                 }
             visualizzazione = sb.ToString();
             lblFortune.Text = visualizzazione;
+            txtSolution.IsEnabled = true;
+            btnDiscover.IsEnabled = true;
+            btnCheck.IsEnabled = true;
         }
         else
         {
-            lblFortune.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
+            lblStatus.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
+            txtSolution.IsEnabled = false;
+            btnDiscover.IsEnabled = false;
+            btnCheck.IsEnabled = false;
         }
 
     }
