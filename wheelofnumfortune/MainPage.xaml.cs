@@ -22,6 +22,7 @@ public partial class MainPage : ContentPage
     private async void tick()
     {
         lblStatus.Text = "";
+        txtSolution.Text = "";
         try
         {
             httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
@@ -39,7 +40,7 @@ public partial class MainPage : ContentPage
         {
             risposta = await httpResponse.Content.ReadAsStringAsync();
             risposta = risposta.Substring(1, risposta.Length - 2);
-            risposta = risposta.Replace("\\n", "");
+            risposta = risposta.Replace("\\n", System.Environment.NewLine);
             risposta = risposta.Replace("\\t", " ");
             risposta = risposta.Replace("\\\"", "\"");
             while (risposta.IndexOf("  ") != -1)

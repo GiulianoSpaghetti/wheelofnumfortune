@@ -13,7 +13,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Label Text="Wheel of numfortune 0.1" Grid.Row="0" />
+                <Label Text="Wheel of numfortune 0.2" Grid.Row="0" />
                 <Label Text="A simple application in which a fortune must be located from letters."  Grid.Row="1"/>
                 <Label Text="ⓒ Giulio Sorrentino 2024, some right reserved" Grid.Row="2" />
                 <Label Text="License: GPLv3 or, in your humble opinion, any later version" Grid.Row="3"/>
