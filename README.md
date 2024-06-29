@@ -12,4 +12,4 @@ https://1drv.ms/u/s!ApmOB0x2yBN0k5BVVvKvCW8NQ4XI2w?e=8EUp75
 
 ## Bugs
 
-On windows the carriage return for lines is \r\n, but maui textarea translate it in \r only, so multiline cookie are not recognized.
+The multiline bug is resolved, however I see that there are some characters that are not corectly translated from json to system.string, so main features are not guaranteed.
