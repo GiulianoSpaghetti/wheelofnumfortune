@@ -1,4 +1,4 @@
-A revisitaion of numerone's fortune in which you have to discover the cookie one letter at time.
+A revisitation of numerone's fortune in which you have to discover the cookie one letter at time.
 It has no timer, lets you think.
 
 [https://1drv.ms/u/s!ApmOB0x2yBN0k5BVVvKvCW8NQ4XI2w?e=8EUp75](https://1drv.ms/u/s!ApmOB0x2yBN0k5M6yknwWvyIlxxwVg?e=5SuaCA)
@@ -13,3 +13,5 @@ It has no timer, lets you think.
 ## Bugs
 
 The multiline bug is resolved, however I see that there are some characters that are not corectly translated from json to system.string, so main features are not guaranteed.
+
+The site on which the app takes the cookies has changed and now it does not allow more than one cookie at time, for changing it you have to restart the application.
