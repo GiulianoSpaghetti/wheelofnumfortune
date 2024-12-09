@@ -15,17 +15,17 @@ public partial class MainPage : ContentPage
     {
         random = new Random();
         InitializeComponent();
-        client = new HttpClient();
         tick();
     }
 
     private async void tick()
     {
+        client = new HttpClient();
         lblStatus.Text = "";
         txtSolution.Text = "";
         try
         {
-            httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
+            httpResponse = await client.GetAsync("https://helloacm.com/api/fortune/");
         }
         catch (Exception ex)
         {
@@ -40,11 +40,13 @@ public partial class MainPage : ContentPage
         {
             risposta = await httpResponse.Content.ReadAsStringAsync();
             risposta = risposta.Substring(1, risposta.Length - 2);
-            risposta = risposta.Replace("\\n", System.Environment.NewLine);
-            risposta = risposta.Replace("\\t", " ");
+#if WINDOWS
+            risposta = risposta.Replace("\\n", "\r");
+#else
+            risposta = risposta.Replace("\\n", "\n");
+#endif
+            risposta = risposta.Replace("\\t", "    ");
             risposta = risposta.Replace("\\\"", "\"");
-            while (risposta.IndexOf("  ") != -1)
-                risposta = risposta.Replace("  ", " ");
             risposta = risposta.Trim();
             sb = new StringBuilder(risposta);
             for (i = 0; i < sb.Length; i++)
@@ -145,14 +147,7 @@ public partial class MainPage : ContentPage
     private void DiscoverLetter_Click(object sender, EventArgs e)
     {
         lblStatus.Text = "";
-        if (visualizzazione.IndexOf('*') == -1)
-        {
-            lblStatus.Text = "You lost";
-            txtSolution.IsEnabled = false;
-            btnDiscover.IsEnabled = false;
-            btnCheck.IsEnabled = false;
-            return;
-        }
+
         i = random.Next(0, sb.Length);
         while (sb[i] != '*' && visualizzazione.IndexOf("*") != -1)
         {
@@ -163,5 +158,12 @@ public partial class MainPage : ContentPage
         sb[i] = risposta[i];
         visualizzazione = sb.ToString();
         lblFortune.Text = visualizzazione;
+        if (visualizzazione.IndexOf('*') == -1)
+        {
+            lblStatus.Text = "You lost";
+            txtSolution.IsEnabled = false;
+            btnDiscover.IsEnabled = false;
+            btnCheck.IsEnabled = false;
+        }
     }
 }
