@@ -18,3 +18,5 @@ For windows the msix packages are platform indepedent and in IL, so you have to 
 The multiline bug is resolved, however I see that there are some characters that are not corectly translated from json to system.string, so main features are not guaranteed.
 
 The site on which the app takes the cookies has changed and now it does not allow more than one cookie at time, for changing it you have to restart the application.
+
+If the application is started without an internet connection the behaviour is unknown.
