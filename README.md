@@ -18,6 +18,11 @@ https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
 For windows the msix packages are platform indepedent and in IL, so you have to download the new dotnet framework runtime eand reinstall the package for obtaining the binary code with latest patches. If microsoft releases new version of maui you need to recompile.
 
+## Differences between maui software and avalonia software
+
+Maui needs to run in a sandbox, while avalonia runs with user permissions.
+So on windows it is better to use avalonia.
+
 
 ## Screenshots
 
