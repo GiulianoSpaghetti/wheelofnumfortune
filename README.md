@@ -18,7 +18,7 @@ https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
 ## Updates
 
-For windows the msix packages are platform indepedent and in IL, so you have to download the new dotnet framework runtime eand reinstall the package for obtaining the binary code with latest patches. If microsoft releases new version of maui you need to recompilr.
+For windows the msix packages are platform indepedent and in IL, so you have to download the new dotnet framework runtime eand reinstall the package for obtaining the binary code with latest patches. If microsoft releases new version of maui you need to recompile.
 
 
 ## Screenshots
