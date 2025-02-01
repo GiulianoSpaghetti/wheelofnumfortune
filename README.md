@@ -1,9 +1,6 @@
 A revisitation of numerone's fortune in which you have to guess the cookie one letter at time.
 It has no timer, lets you think.
 
-[https://1drv.ms/u/s!ApmOB0x2yBN0k5BVVvKvCW8NQ4XI2w?e=8EUp75](https://1drv.ms/u/s!ApmOB0x2yBN0k5M6yknwWvyIlxxwVg?e=5SuaCA)
-
-
 ## How to download
 ## On Android
 
@@ -11,7 +8,16 @@ It has no timer, lets you think.
 
 ## Updates
 
-For windows the msix packages are platform indepedent and in IL, so you have to download the new dotnet framework runtime eand reinstall the package for obtaining the binary code with latest patches.
+For windows the msix packages are platform indepedent and in IL, so you have to download the new dotnet framework runtime eand reinstall the package for obtaining the binary code with latest patches. If microsoft releases new version of maui you need to recompilr.
+
+
+## Screenshots
+
+<img width="1431" alt="2025-02-01" src="https://github.com/user-attachments/assets/7a9d6bad-9ed7-43ad-bcd6-73350c75a9d4" />
+<img width="1431" alt="2025-02-01 (3)" src="https://github.com/user-attachments/assets/dd3aa978-1188-412f-86cd-49e22f425d8d" />
+<img width="1431" alt="2025-02-01 (2)" src="https://github.com/user-attachments/assets/7411f027-3e12-448f-a133-5078f586abcd" />
+<img width="1431" alt="2025-02-01 (1)" src="https://github.com/user-attachments/assets/f4039f83-2852-4c67-be24-3b2dd90e41c3" />
+
 
 ## Bugs
 
