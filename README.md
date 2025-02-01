@@ -8,8 +8,6 @@ It has no timer, lets you think.
 
 ## On Windows
 
-## On Windows
-
 Get the msix you like from the releases on github, which are checked and do not contain viruses. The msix package is associated with a .cer certificate that must be installed in "Local Computer" > "Trusted People".
 
 Prerequisites:
