@@ -1,6 +1,12 @@
 A revisitation of numerone's fortune in which you have to guess the cookie one letter at time.
 It has no timer, lets you think.
 
+The use case
+
+The game is a family game to play together, to get to know English, so imagine you and your partner playing "guess the English sentence" and she shouts "as so long, not is so long".
+
+This is the registered motto.
+
 ## How to download
 ## On Android
 
