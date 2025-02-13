@@ -4,7 +4,7 @@ namespace wheelofnumfortune;
 
 public partial class MainPage : ContentPage
 {
-    private static HttpClient client;
+    private static HttpClient client = new HttpClient();
     private static HttpResponseMessage httpResponse;
     private static String risposta;
     private static String visualizzazione;
@@ -20,14 +20,17 @@ public partial class MainPage : ContentPage
 
     private async void tick()
     {
-        client = new HttpClient();
         lblStatus.Text = "";
         txtSolution.Text = "";
         try
         {
             httpResponse = await client.GetAsync("https://helloacm.com/api/fortune/");
+            if (httpResponse.IsSuccessStatusCode)
+            {
+                risposta = await httpResponse.Content.ReadAsStringAsync();
+            }
         }
-        catch (Exception ex)
+        catch (InvalidOperationException ex)
         {
             lblStatus.Text = ex.Message;
             txtSolution.IsEnabled = false;
@@ -35,10 +38,17 @@ public partial class MainPage : ContentPage
             btnCheck.IsEnabled = false;
             return;
         }
-
-        if (httpResponse.IsSuccessStatusCode)
+        catch (AggregateException ex)
         {
-            risposta = await httpResponse.Content.ReadAsStringAsync();
+            lblStatus.Text = ex.Message;
+            txtSolution.IsEnabled = false;
+            btnDiscover.IsEnabled = false;
+            btnCheck.IsEnabled = false;
+            return;
+        }
+        if (risposta!=null)
+        {
+           
             risposta = risposta.Substring(1, risposta.Length - 2);
 #if WINDOWS
             risposta = risposta.Replace("\\n", "\r");
@@ -46,6 +56,7 @@ public partial class MainPage : ContentPage
             risposta = risposta.Replace("\\n", "\n");
 #endif
             risposta = risposta.Replace("\\t", "    ");
+            risposta = risposta.Replace("\\b", "");
             risposta = risposta.Replace("\\\"", "\"");
             risposta = risposta.Trim();
             sb = new StringBuilder(risposta);

@@ -9,6 +9,6 @@ public partial class InfoPage : ContentPage
 
     private async void OnSito_Click(object sender, EventArgs e)
     {
-        await Launcher.Default.OpenAsync(new Uri("https://github.com/numerunix/WheelOfNumFortune"));
+        await Launcher.Default.OpenAsync(new Uri("https://github.com/GiulianoSpaghetti/WheelOfNumFortune"));
     }
 }

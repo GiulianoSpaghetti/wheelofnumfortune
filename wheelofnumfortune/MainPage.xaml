@@ -8,9 +8,9 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <Editor x:Name="lblFortune" IsEnabled="False"/>
+            <Editor x:Name="lblFortune" IsReadOnly="True" AutoSize="TextChanges"/>
             <Button Text="Refresh" Clicked="OnRefresh_Click" />
-            <Editor x:Name="txtSolution"  IsEnabled="False"/>
+            <Editor x:Name="txtSolution"  IsEnabled="False" AutoSize="TextChanges"/>
             <Button x:Name="btnCheck" Text="Check Solution" Clicked="CheckSolution_Click" IsEnabled="False"/>
             <Button x:Name="btnDiscover" Text="Discover letter" Clicked="DiscoverLetter_Click" IsEnabled="False"/>
             <Label x:Name="lblStatus" TextType="Html"/>

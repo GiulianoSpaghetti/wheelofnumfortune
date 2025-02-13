@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.10.35004.147
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wheelofnumfortune", "wheelofnumfortune\wheelofnumfortune.csproj", "{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wheelofnumfortune", "wheelofnumfortune\wheelofnumfortune.csproj", "{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8ACDD4D3-047D-423B-BA42-C23BDEB4B213}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B474BB6B-5F71-4EDD-8D25-9F846A4DEC90}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3D14245F-3AD7-47B3-9A5B-90CAFA6F6235}
 	EndGlobalSection
 EndGlobal
