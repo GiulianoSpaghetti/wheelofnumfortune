@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net.Sockets;
+using System.Text;
 
 namespace wheelofnumfortune;
 
@@ -38,7 +39,15 @@ public partial class MainPage : ContentPage
             btnCheck.IsEnabled = false;
             return;
         }
-        catch (AggregateException ex)
+        catch (HttpRequestException ex)
+        {
+            lblStatus.Text = ex.Message;
+            txtSolution.IsEnabled = false;
+            btnDiscover.IsEnabled = false;
+            btnCheck.IsEnabled = false;
+            return;
+        }
+        catch (SocketException ex)
         {
             lblStatus.Text = ex.Message;
             txtSolution.IsEnabled = false;
