@@ -44,4 +44,10 @@ The multiline bug is resolved, however I see that there are some characters that
 
 The site on which the app takes the cookies has changed and now it does not allow more than one cookie at time, for changing it you have to restart the application.
 
-If the application is started without an internet connection the behaviour is unknown.
+## Optimization of STATIC
+
+Using the static variable to save the data it's an optimization, and then Microsoft has decided to exclude the static variable from the garbage collector.
+
+Is happened that cousin Bruno and friend Francesca (not my "francesca") has discovered that after 7 consecutive games the cellphone goes in out of memory, and my Francesca has understoood that static optimization is banned from dotnet 8.0.4.
+
+Now your Android does not goes out of memory, it slows down.
