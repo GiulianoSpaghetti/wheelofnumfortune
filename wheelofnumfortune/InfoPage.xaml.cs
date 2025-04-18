@@ -2,7 +2,7 @@ namespace wheelofnumfortune;
 
 public partial class InfoPage : ContentPage
 {
-    public static readonly Uri uri = new Uri("https://github.com/GiulianoSpaghetti/WheelOfNumFortune");
+    public readonly Uri uri = new Uri("https://github.com/GiulianoSpaghetti/WheelOfNumFortune");
 
     public InfoPage()
 	{

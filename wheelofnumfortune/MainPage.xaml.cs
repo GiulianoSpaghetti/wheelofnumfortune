@@ -5,13 +5,13 @@ namespace wheelofnumfortune;
 
 public partial class MainPage : ContentPage
 {
-    private static HttpClient client = new HttpClient();
-    private static HttpResponseMessage httpResponse;
-    private static String risposta;
-    private static String visualizzazione;
-    private static int i;
-    private static StringBuilder sb;
-    private static Random random;
+    private HttpClient client = new HttpClient();
+    private HttpResponseMessage httpResponse;
+    private String risposta;
+    private String visualizzazione;
+    private int i;
+    private StringBuilder sb;
+    private Random random;
     public MainPage()
     {
         random = new Random();
