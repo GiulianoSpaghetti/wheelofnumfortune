@@ -18,7 +18,9 @@ Get the msix you like from the releases on github, which are checked and do not 
 
 Prerequisites:
 
-https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
+https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.10
+
+Is raccomanded having the windows app runtime 1.8 (https://winstall.app/apps/Microsoft.WindowsAppRuntime.1.8) installed, even if you use the windows desktop runtime 9 or 10. All must be revealed...
 
 ## Updates
 
