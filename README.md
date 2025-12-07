@@ -1,4 +1,6 @@
 A revisitation of numerone's fortune in which you have to guess the cookie one letter at time.
+It takes sentences using th rest api of helloacm.com.
+
 It has no timer, lets you think.
 
 The use case
