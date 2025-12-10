@@ -26,7 +26,7 @@ Is raccomended having the windows app runtime 1.8 (https://winstall.app/apps/Mic
 
 ## Updates
 
-For windows the msix packages are platform indepedent and in IL, so you have to download the new dotnet framework runtime eand reinstall the package for obtaining the binary code with latest patches. If microsoft releases new version of maui you need to recompile.
+For Windows, the msix packages are platform independent and in IL, but they are in dotnet 9 and 10, so it is necessary to recompile to avoid having a spurious system in case of a new dotnet framework which is however necessary for starting the software, which if updated should prevent the shock on the fans.
 
 ## Differences between maui software and avalonia software
 
