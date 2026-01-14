@@ -15,7 +15,7 @@
                 </Grid.RowDefinitions>
                 <Label Text="Wheel of numerone's fortune 0.4" Grid.Row="0" />
                 <Label Text="A simple application in which a fortune must be located from letters."  Grid.Row="1"/>
-                <Label Text="ⓒ Giulio Sorrentino 2024-2025, some right reserved" Grid.Row="2" />
+                <Label Text="ⓒ Giulio Sorrentino 2024-2026, some right reserved" Grid.Row="2" />
                 <Label Text="License: GPLv3 or, in your humble opinion, any later version" Grid.Row="3"/>
                 <Button Text="More Informations" Clicked="OnSito_Click" Grid.Row="6" />
             </Grid>
