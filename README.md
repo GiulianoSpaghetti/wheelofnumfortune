@@ -33,10 +33,9 @@ So on windows it is better to use avalonia.
 
 ## Screenshots
 
-<img width="1431" alt="2025-02-01" src="https://github.com/user-attachments/assets/7a9d6bad-9ed7-43ad-bcd6-73350c75a9d4" />
-<img width="1431" alt="2025-02-01 (3)" src="https://github.com/user-attachments/assets/dd3aa978-1188-412f-86cd-49e22f425d8d" />
-<img width="1431" alt="2025-02-01 (2)" src="https://github.com/user-attachments/assets/7411f027-3e12-448f-a133-5078f586abcd" />
-<img width="1431" alt="2025-02-01 (1)" src="https://github.com/user-attachments/assets/f4039f83-2852-4c67-be24-3b2dd90e41c3" />
+<img width="1600" height="900" alt="Screenshot 2026-05-22 210020" src="https://github.com/user-attachments/assets/17c23627-de34-4c9a-85e0-0a70ce245141" />
+<img width="1600" height="900" alt="Screenshot 2026-05-22 210124" src="https://github.com/user-attachments/assets/61b3727e-cb66-4796-8007-293f88baa519" />
+<img width="1600" height="900" alt="Screenshot 2026-05-22 210147" src="https://github.com/user-attachments/assets/24ef42af-dc62-49c0-8764-aeb0c6fb309e" />
 
 
 ## Bugs
