@@ -13,7 +13,6 @@
             <Editor x:Name="txtSolution"  IsEnabled="False" AutoSize="TextChanges"/>
             <Button x:Name="btnCheck" Text="Check Solution" Clicked="CheckSolution_Click" IsEnabled="False"/>
             <Button x:Name="btnDiscover" Text="Discover letter" Clicked="DiscoverLetter_Click" IsEnabled="False"/>
-            <Label x:Name="lblStatus" TextType="Html"/>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using CommunityToolkit.Maui.Alerts;
+using System.Net.Sockets;
 using System.Text;
 
 namespace wheelofnumfortune;
@@ -21,8 +22,6 @@ public partial class MainPage : ContentPage
 
     private async void tick()
     {
-        lblStatus.Text = "";
-        txtSolution.Text = "";
         try
         {
             httpResponse = await client.GetAsync("https://helloacm.com/api/fortune/");
@@ -33,7 +32,7 @@ public partial class MainPage : ContentPage
         }
         catch (InvalidOperationException ex)
         {
-            lblStatus.Text = ex.Message;
+            await Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
@@ -41,7 +40,8 @@ public partial class MainPage : ContentPage
         }
         catch (HttpRequestException ex)
         {
-            lblStatus.Text = ex.Message;
+            await Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
+            txtSolution.IsEnabled = false;
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
@@ -49,7 +49,8 @@ public partial class MainPage : ContentPage
         }
         catch (SocketException ex)
         {
-            lblStatus.Text = ex.Message;
+            await Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
+            txtSolution.IsEnabled = false;
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
@@ -137,7 +138,7 @@ public partial class MainPage : ContentPage
         }
         else
         {
-            lblStatus.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
+            await Snackbar.Make($"The HTTP status code is ${httpResponse.StatusCode}").Show(App.cancellationTokenSource.Token);
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
@@ -153,21 +154,19 @@ public partial class MainPage : ContentPage
     {
         if (txtSolution.Text == risposta)
         {
-            lblStatus.Text = "You are right";
+            Snackbar.Make("You are right").Show(App.cancellationTokenSource.Token); 
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
         }
         else
         {
-            lblStatus.Text = "You are wrong";
+            Snackbar.Make("You are wrong").Show(App.cancellationTokenSource.Token);
         }
     }
 
     private void DiscoverLetter_Click(object sender, EventArgs e)
     {
-        lblStatus.Text = "";
-
         i = random.Next(0, sb.Length);
         while (sb[i] != '*' && visualizzazione.IndexOf("*") != -1)
         {
@@ -180,7 +179,8 @@ public partial class MainPage : ContentPage
         lblFortune.Text = visualizzazione;
         if (visualizzazione.IndexOf('*') == -1)
         {
-            lblStatus.Text = "You lost";
+            Snackbar.Make("You have lost").Show(App.cancellationTokenSource.Token);
+            txtSolution.IsEnabled = false;
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
