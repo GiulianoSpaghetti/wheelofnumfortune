@@ -49,3 +49,4 @@ Using the static variable to save the data it's an optimization, and then Micros
 Is happened that cousin Bruno and friend Francesca (not my "francesca") has discovered that after 7 consecutive games the cellphone goes in out of memory, and my Francesca has understoood that static optimization is banned from dotnet 8.0.4.
 
 Now your Android does not goes out of memory, it slows down.
+
