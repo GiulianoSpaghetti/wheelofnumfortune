@@ -1,3 +1,5 @@
+[![.NET MAUI Build](https://github.com/GiulianoSpaghetti/wheelofnumfortune/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/GiulianoSpaghetti/wheelofnumfortune/actions/workflows/dotnet-desktop.yml)
+
 A revisitation of numerone's fortune in which you have to guess the cookie one letter at time.
 It takes sentences using th rest api of helloacm.com.
 
