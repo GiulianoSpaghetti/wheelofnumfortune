@@ -8,7 +8,7 @@
     xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
     IgnorableNamespaces="uap rescap com desktop">
 
-  <Identity Name="maui-package-name-plzzzzaceholder" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="1.0.1.0" />
+  <Identity Name="maui-package-name-plzzzzaceholder" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="1.0.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="131BDFE2-9553-494B-9530-70412480CE87" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
