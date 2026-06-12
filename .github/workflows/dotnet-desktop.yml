@@ -53,6 +53,6 @@ jobs:
       uses: actions/upload-artifact@v7
       with:
         name: MSIX
-        path: wheelofnumfotune/AppPackages/
+        path: wheelofnumfortune/AppPackages/
         include-hidden-files: true
         if-no-files-found: error
