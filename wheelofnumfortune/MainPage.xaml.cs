@@ -60,11 +60,7 @@ public partial class MainPage : ContentPage
         {
            
             risposta = risposta.Substring(1, risposta.Length - 2);
-#if WINDOWS
-            risposta = risposta.Replace("\\n", "\r");
-#else
-            risposta = risposta.Replace("\\n", "\n");
-#endif
+            risposta = risposta.Replace("\\n", System.Environment.NewLine);
             risposta = risposta.Replace("\\t", "    ");
             risposta = risposta.Replace("\\b", "");
             risposta = risposta.Replace("\\\"", "\"");
