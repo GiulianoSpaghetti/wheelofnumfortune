@@ -15,6 +15,13 @@ This is the registered motto.
 
 Get the msix you like from the releases on github, which are checked and do not contain viruses. The msix package is associated with a .cer certificate that must be installed in "Local Computer" > "Trusted People".
 
+For obtaining the updates, it is online my winget server, becaouse of the official one refuses to resign my packages, and it0's fully functional just install my crtificate insted of the once of the store.
+
+It does not manage prerequisites, beause of the metadata for dotnet windows deskop runtime are not indexed due to copyright.
+        https://numeronesoft.ddns.net/api/net11
+
+[Presentation video of the winget repository](https://youtu.be/HXUkuqLNmEw?si=bJEBIfietVllBS3K)
+
 Prerequisites:
 
 #### Windows
